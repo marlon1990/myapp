@@ -1,2 +1,1 @@
-# myapp
-Primer proyecto en meteor
+Esta es mi primer app en meteor.
