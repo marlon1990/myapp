@@ -2,16 +2,20 @@
   <title>myapp</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<body>  
+  <div class="container">
+     <h1>Welcome to Meteor!</h1>
 
-  {{> operaciones}}
-  <!--{{> info}}-->
+     {{> operaciones}}
+     {{> formulario}}
+       <!--{{> info}}-->
+
+  </div>
 </body>
 
 <template name="operaciones">
-  <button class="suma"> suma </button>
-  <button class="resta"> resta </button>
+  <button class="suma btn blue"> suma </button>
+  <button class="resta btn red"> resta </button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
 
