@@ -25,3 +25,21 @@ Template.operaciones.events({
     instance.counter.set(instance.counter.get() - 1);
   },
 });
+
+Template.Formulario.events({
+  ´submit´ (event){
+    event.preventDefault();
+    var first_name = event.target.first_name.value;
+    var last_name = event.target.last_name.value;
+    var password = event.target.password.value;
+    var email = event.target.email.value;
+
+    var person = {
+      name: first_name + " " + last_name,
+      password: password,
+      email: email,
+    }
+    console.log("person: ", person);
+    event.target.first_name.value="";
+  }
+})
