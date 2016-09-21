@@ -27,7 +27,7 @@ Template.operaciones.events({
 });
 
 Template.Formulario.events({
-  ´submit´ (event){
+  'submit' (event){
     event.preventDefault();
     var first_name = event.target.first_name.value;
     var last_name = event.target.last_name.value;
